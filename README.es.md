@@ -61,13 +61,9 @@ npm run preview
 
 ## Licencia Y Uso
 
-Este proyecto es educativo y se puede usar con libertad siempre que se respete la licencia.
+Este proyecto es educativo y se puede usar con libertad siempre que se respete la licencia MIT.
 
-Se distribuye bajo la licencia MIT.
-
-Copyright (c) Miguel Angel Cespedes Fernandez
-
-Consulta el archivo `LICENSE` para ver los terminos completos.
+Consulta `LICENSE` para mas detalles.
 
 ## Documentacion En Ingles
 

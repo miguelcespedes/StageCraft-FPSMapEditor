@@ -1,0 +1,91 @@
+:root {
+  color-scheme: dark;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app,
+.editor-shell,
+.editor-shell__viewport {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #111;
+}
+
+canvas {
+  display: block;
+}
+
+.editor-shell {
+  position: relative;
+}
+
+.inspector-ui {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inspector-button {
+  align-self: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: rgba(12, 12, 12, 0.58);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  line-height: 1;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.inspector-button.is-active {
+  background: rgba(255, 177, 0, 0.18);
+  border-color: rgba(255, 177, 0, 0.45);
+  color: #ffd166;
+}
+
+.inspector-panel {
+  min-width: 220px;
+  max-width: 320px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 9px 11px;
+  background: rgba(0, 0, 0, 0.48);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-line;
+  backdrop-filter: blur(10px);
+}
+
+.selection-tag {
+  position: fixed;
+  z-index: 11;
+  transform: translate(14px, -14px);
+  pointer-events: none;
+  border: 1px solid rgba(255, 177, 0, 0.4);
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(12, 12, 12, 0.82);
+  color: #ffd166;
+  font-size: 12px;
+  line-height: 1;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}

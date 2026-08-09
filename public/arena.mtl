@@ -1,0 +1,31 @@
+# Materiales de color solido para la arena FPS
+newmtl Verde_Pasto
+Ka 0.000 0.000 0.000
+Kd 0.180 0.520 0.140
+Ks 0.000 0.000 0.000
+d 1.0
+illum 1
+
+newmtl Naranja_Lava
+Ka 0.400 0.120 0.000
+Kd 0.980 0.420 0.060
+Ks 0.000 0.000 0.000
+Ke 0.980 0.420 0.060
+d 1.0
+illum 1
+
+newmtl Gris_Metal
+Ka 0.000 0.000 0.000
+Kd 0.420 0.450 0.480
+Ks 0.300 0.300 0.300
+Ns 24.0
+d 1.0
+illum 2
+
+newmtl Azul_Muro
+Ka 0.000 0.000 0.000
+Kd 0.160 0.220 0.330
+Ks 0.100 0.100 0.100
+Ns 10.0
+d 1.0
+illum 2

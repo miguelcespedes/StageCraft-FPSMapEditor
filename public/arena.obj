@@ -1,0 +1,382 @@
+# Arena FPS simetrica - 100 x 100 unidades (1 unidad = 1 metro)
+# Sistema: Y arriba, mano derecha. Quads, sin normales ni UVs.
+mtllib arena.mtl
+
+# --- Bloque Suelo_Pasto | offset 0 ---
+g Suelo_Pasto
+v -50 -0.1 -50
+v 50 -0.1 -50
+v 50 0 -50
+v -50 0 -50
+v -50 -0.1 50
+v 50 -0.1 50
+v 50 0 50
+v -50 0 50
+usemtl Verde_Pasto
+f 2 1 4 3
+f 5 6 7 8
+f 1 5 8 4
+f 2 3 7 6
+f 4 8 7 3
+f 1 2 6 5
+
+# --- Bloque Rio_Lava | offset 8 ---
+g Rio_Lava
+v -50 0 -4
+v 50 0 -4
+v 50 0.15 -4
+v -50 0.15 -4
+v -50 0 4
+v 50 0 4
+v 50 0.15 4
+v -50 0.15 4
+usemtl Naranja_Lava
+f 10 9 12 11
+f 13 14 15 16
+f 9 13 16 12
+f 10 11 15 14
+f 12 16 15 11
+f 9 10 14 13
+
+# --- Bloque Cascada_Lava | offset 16 ---
+g Cascada_Lava
+v 47.7 0 -4
+v 48.1 0 -4
+v 48.1 10 -4
+v 47.7 10 -4
+v 47.7 0 4
+v 48.1 0 4
+v 48.1 10 4
+v 47.7 10 4
+usemtl Naranja_Lava
+f 18 17 20 19
+f 21 22 23 24
+f 17 21 24 20
+f 18 19 23 22
+f 20 24 23 19
+f 17 18 22 21
+
+# --- Bloque Muro_Norte | offset 24 ---
+g Muro_Norte
+v -50 0 -50
+v 50 0 -50
+v 50 10 -50
+v -50 10 -50
+v -50 0 -48
+v 50 0 -48
+v 50 10 -48
+v -50 10 -48
+usemtl Azul_Muro
+f 26 25 28 27
+f 29 30 31 32
+f 25 29 32 28
+f 26 27 31 30
+f 28 32 31 27
+f 25 26 30 29
+
+# --- Bloque Muro_Sur | offset 32 ---
+g Muro_Sur
+v -50 0 48
+v 50 0 48
+v 50 10 48
+v -50 10 48
+v -50 0 50
+v 50 0 50
+v 50 10 50
+v -50 10 50
+usemtl Azul_Muro
+f 34 33 36 35
+f 37 38 39 40
+f 33 37 40 36
+f 34 35 39 38
+f 36 40 39 35
+f 33 34 38 37
+
+# --- Bloque Muro_Este | offset 40 ---
+g Muro_Este
+v 48 0 -48
+v 50 0 -48
+v 50 10 -48
+v 48 10 -48
+v 48 0 48
+v 50 0 48
+v 50 10 48
+v 48 10 48
+usemtl Azul_Muro
+f 42 41 44 43
+f 45 46 47 48
+f 41 45 48 44
+f 42 43 47 46
+f 44 48 47 43
+f 41 42 46 45
+
+# --- Bloque Muro_Oeste | offset 48 ---
+g Muro_Oeste
+v -50 0 -48
+v -48 0 -48
+v -48 10 -48
+v -50 10 -48
+v -50 0 48
+v -48 0 48
+v -48 10 48
+v -50 10 48
+usemtl Azul_Muro
+f 50 49 52 51
+f 53 54 55 56
+f 49 53 56 52
+f 50 51 55 54
+f 52 56 55 51
+f 49 50 54 53
+
+# --- Bloque Puente_Oeste | offset 56 ---
+g Puente_Oeste
+v -29 0 -6
+v -21 0 -6
+v -21 0.3 -6
+v -29 0.3 -6
+v -29 0 6
+v -21 0 6
+v -21 0.3 6
+v -29 0.3 6
+usemtl Gris_Metal
+f 58 57 60 59
+f 61 62 63 64
+f 57 61 64 60
+f 58 59 63 62
+f 60 64 63 59
+f 57 58 62 61
+
+# --- Bloque Puente_Este | offset 64 ---
+g Puente_Este
+v 21 0 -6
+v 29 0 -6
+v 29 0.3 -6
+v 21 0.3 -6
+v 21 0 6
+v 29 0 6
+v 29 0.3 6
+v 21 0.3 6
+usemtl Gris_Metal
+f 66 65 68 67
+f 69 70 71 72
+f 65 69 72 68
+f 66 67 71 70
+f 68 72 71 67
+f 65 66 70 69
+
+# --- Bloque Torre_Norte | offset 72 ---
+g Torre_Norte
+v -5 0 -41
+v 5 0 -41
+v 5 6 -41
+v -5 6 -41
+v -5 0 -35
+v 5 0 -35
+v 5 6 -35
+v -5 6 -35
+usemtl Gris_Metal
+f 74 73 76 75
+f 77 78 79 80
+f 73 77 80 76
+f 74 75 79 78
+f 76 80 79 75
+f 73 74 78 77
+
+# --- Bloque Caja_NO | offset 80 ---
+g Caja_NO
+v -22.5 0 -40.5
+v -17.5 0 -40.5
+v -17.5 5 -40.5
+v -22.5 5 -40.5
+v -22.5 0 -35.5
+v -17.5 0 -35.5
+v -17.5 5 -35.5
+v -22.5 5 -35.5
+usemtl Gris_Metal
+f 82 81 84 83
+f 85 86 87 88
+f 81 85 88 84
+f 82 83 87 86
+f 84 88 87 83
+f 81 82 86 85
+
+# --- Bloque Caja_NE | offset 88 ---
+g Caja_NE
+v 17.5 0 -40.5
+v 22.5 0 -40.5
+v 22.5 5 -40.5
+v 17.5 5 -40.5
+v 17.5 0 -35.5
+v 22.5 0 -35.5
+v 22.5 5 -35.5
+v 17.5 5 -35.5
+usemtl Gris_Metal
+f 90 89 92 91
+f 93 94 95 96
+f 89 93 96 92
+f 90 91 95 94
+f 92 96 95 91
+f 89 90 94 93
+
+# --- Bloque Torre_Sur | offset 96 ---
+g Torre_Sur
+v -5 0 35
+v 5 0 35
+v 5 6 35
+v -5 6 35
+v -5 0 41
+v 5 0 41
+v 5 6 41
+v -5 6 41
+usemtl Gris_Metal
+f 98 97 100 99
+f 101 102 103 104
+f 97 101 104 100
+f 98 99 103 102
+f 100 104 103 99
+f 97 98 102 101
+
+# --- Bloque Caja_SO | offset 104 ---
+g Caja_SO
+v -22.5 0 35.5
+v -17.5 0 35.5
+v -17.5 5 35.5
+v -22.5 5 35.5
+v -22.5 0 40.5
+v -17.5 0 40.5
+v -17.5 5 40.5
+v -22.5 5 40.5
+usemtl Gris_Metal
+f 106 105 108 107
+f 109 110 111 112
+f 105 109 112 108
+f 106 107 111 110
+f 108 112 111 107
+f 105 106 110 109
+
+# --- Bloque Caja_SE | offset 112 ---
+g Caja_SE
+v 17.5 0 35.5
+v 22.5 0 35.5
+v 22.5 5 35.5
+v 17.5 5 35.5
+v 17.5 0 40.5
+v 22.5 0 40.5
+v 22.5 5 40.5
+v 17.5 5 40.5
+usemtl Gris_Metal
+f 114 113 116 115
+f 117 118 119 120
+f 113 117 120 116
+f 114 115 119 118
+f 116 120 119 115
+f 113 114 118 117
+
+# --- Bloque Cobertura_NO | offset 120 ---
+g Cobertura_NO
+v -16 0 -18
+v -12 0 -18
+v -12 3 -18
+v -16 3 -18
+v -16 0 -14
+v -12 0 -14
+v -12 3 -14
+v -16 3 -14
+usemtl Gris_Metal
+f 122 121 124 123
+f 125 126 127 128
+f 121 125 128 124
+f 122 123 127 126
+f 124 128 127 123
+f 121 122 126 125
+
+# --- Bloque Cobertura_NE | offset 128 ---
+g Cobertura_NE
+v 12 0 -18
+v 16 0 -18
+v 16 3 -18
+v 12 3 -18
+v 12 0 -14
+v 16 0 -14
+v 16 3 -14
+v 12 3 -14
+usemtl Gris_Metal
+f 130 129 132 131
+f 133 134 135 136
+f 129 133 136 132
+f 130 131 135 134
+f 132 136 135 131
+f 129 130 134 133
+
+# --- Bloque Cobertura_SO | offset 136 ---
+g Cobertura_SO
+v -16 0 14
+v -12 0 14
+v -12 3 14
+v -16 3 14
+v -16 0 18
+v -12 0 18
+v -12 3 18
+v -16 3 18
+usemtl Gris_Metal
+f 138 137 140 139
+f 141 142 143 144
+f 137 141 144 140
+f 138 139 143 142
+f 140 144 143 139
+f 137 138 142 141
+
+# --- Bloque Cobertura_SE | offset 144 ---
+g Cobertura_SE
+v 12 0 14
+v 16 0 14
+v 16 3 14
+v 12 3 14
+v 12 0 18
+v 16 0 18
+v 16 3 18
+v 12 3 18
+usemtl Gris_Metal
+f 146 145 148 147
+f 149 150 151 152
+f 145 149 152 148
+f 146 147 151 150
+f 148 152 151 147
+f 145 146 150 149
+
+# --- Bloque Spawn_Norte | offset 152 ---
+g Spawn_Norte
+v -8 0 -48
+v 8 0 -48
+v 8 1 -48
+v -8 1 -48
+v -8 0 -42
+v 8 0 -42
+v 8 1 -42
+v -8 1 -42
+usemtl Gris_Metal
+f 154 153 156 155
+f 157 158 159 160
+f 153 157 160 156
+f 154 155 159 158
+f 156 160 159 155
+f 153 154 158 157
+
+# --- Bloque Spawn_Sur | offset 160 ---
+g Spawn_Sur
+v -8 0 42
+v 8 0 42
+v 8 1 42
+v -8 1 42
+v -8 0 48
+v 8 0 48
+v 8 1 48
+v -8 1 48
+usemtl Gris_Metal
+f 162 161 164 163
+f 165 166 167 168
+f 161 165 168 164
+f 162 163 167 166
+f 164 168 167 163
+f 161 162 166 165
+
